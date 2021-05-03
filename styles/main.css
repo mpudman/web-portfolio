@@ -27,9 +27,6 @@ body {
   width:100%;
   margin: 0px auto;
 }
-.container { 
-
-}
 .box {
   border: 1px solid #ccc;
 }
@@ -124,15 +121,15 @@ body {
 
 /* hero section */
 .hero-block {
-    padding: 20px;
+    padding: 10px;
     background-color: #ccc;
   }
   
   @media only screen and (min-width: 768px) {
     .hero-block {
-      position: absolute;
-      top: 74%;
-      right: 15%;
+      position:absolute;
+      top: 80%;
+      right: 16%;
     }
   }
 
@@ -160,7 +157,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "Area1 Area2 Area3"   

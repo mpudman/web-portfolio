@@ -13,11 +13,22 @@ html {
 }
 
 /* header */
-header {
-  background-color: #f1f1f1;
+.header {
+  background-color: #638562;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+.container {
+
+}
+
+[class*="col-"] {
+  float: left;
   padding: 20px;
   text-align: center;
 }
+
 
 /* font used on in the html page */
 body {
@@ -30,14 +41,18 @@ body {
 .box {
   border: 1px solid #ccc;
 }
+
 .row {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
 }
 
 .col {
   flex-grow: 1;
 }
+
+
+
 
 @media only screen and (min-width: 768px) {
   .row {
@@ -76,15 +91,11 @@ body {
 /* grid structure */
 .row {
     clear:both;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  
   
   .row-clear {
     clear: both;
@@ -157,15 +168,22 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
     grid-template-areas:
       "Area1 Area2 Area3"   
+      "Area4 Area5 Area6" 
   }
   .area1 { grid-area: Area1; }
   .area2 { grid-area: Area2; }
   .area3 { grid-area: Area3; }
- 
+  .area4 { grid-area: Area4; }
+  .area5 { grid-area: Area5; }
+  .area6 { grid-area: Area6; }
+  
+    
+  
+
   /* responsive image */
 .img-responsive {
     max-width: 100%;

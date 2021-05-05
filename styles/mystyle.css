@@ -1,0 +1,81 @@
+/* to reset the CSS page */
+* {
+    box-sizing: border-box;
+  }
+
+  /* general */
+
+html {
+    font-size: 24px;
+}
+
+.header {
+    background-color: #638562;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* font used on in the html page */
+body {
+    /* font-family: 'Indie Flower', cursive;*/
+   /* font-family: 'Lato', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    margin: 0px auto;
+  }
+
+  .row {
+    content: "";
+    clear: both;
+    display: block;
+    text-align: center;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  /* hero section */
+.hero-block {
+    padding: 10px;
+    background-color: #ccc;
+  }
+
+
+  /* contact details */
+.contact-details{
+    padding: 40px;
+  }
+  
+  .contact-form {
+    padding: 40px;
+  }
+  
+  .contact-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+
+/*footer*/
+footer{
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+

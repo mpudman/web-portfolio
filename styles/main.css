@@ -1,203 +1,235 @@
 
 /* to reset the CSS page */
 *{
-    margin: 5px;
-    padding-top: 5px;
-    box-sizing: border-box;
+  margin: 5px;
+  padding-top: 5px;
+  box-sizing: border-box;
 }
 
 /* general */
 
 html {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 /* header */
-header {
-  background-color: #31a531;
-  padding: 20px;
-  text-align: right;
+.header {
+background-color: #638562;
+color: #ffffff;
+padding: 15px;
+text-align: center;
 }
+.container {
+
+}
+
+[class*="col-"] {
+float: left;
+padding: 20px;
+text-align: center;
+}
+
 
 /* font used on in the html page */
 body {
-  font-family: 'Raleway', sans-serif;
-  /* font-family: 'Lato', sans-serif;*/
-  /* font-family: 'Indie Flower', cursive;*/
-  width:100%;
-  margin: 0px auto;
+/* font-family: 'Indie Flower', cursive;*/
+/* font-family: 'Lato', sans-serif;*/
+font-family: 'Raleway', sans-serif;
+width:100%;
+margin: 0px auto;
 }
 .box {
-  border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
+
 .row {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction:column;
 }
 
 .col {
-  flex-grow: 1;
+flex-grow: 1;
 }
 
+
+
+
 @media only screen and (min-width: 768px) {
-  .row {
-    flex-direction:row;
-  }
+.row {
+  flex-direction:row;
+}
 }
 .col-1-3 {
-  flex-grow: 1;
+flex-grow: 1;
 }
 
 .col-2-3 {
-  flex-grow: 2;
+flex-grow: 2;
 }
 
 .portfolio {
-  width: 100%;
+width: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  .portfolio {
-    width: 1024px;
-    margin: 0 auto;
-  }
+.portfolio {
+  width: 1024px;
+  margin: 0 auto;
+}
 }
 
 
 /* title */
 .title {
-    border-left: 5px solid #ccc;
-    padding-left: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 
 
 /* grid structure */
 .row {
-    clear:both;
-    margin-left: -10px;
-    margin-right: -10px;
+  clear:both;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+.row-clear {
+  clear: both;
+}
+
+.one-third, .two-thirds, .half {
+  width: 100%;
+  float:left;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .one-third {
+    width: calc(100%/3);
   }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  .half {
+    width: calc(100%/2);
   }
-  
-  .row-clear {
-    clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  .two-thirds {
+    width: calc(2*100%/3);
   }
-  
-  .one-third, .two-thirds, .half {
-    width: 100%;
-    float:left;
-    padding: 0 10px;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .one-third {
-      width: calc(100%/3);
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .half {
-      width: calc(100%/2);
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .two-thirds {
-      width: calc(2*100%/3);
-    }
-  }
-  
-  .content {
-    padding: 10px;
-  }
-  
+}
+
+.content {
+  padding: 10px;
+}
+
 
 /* hero section */
 .hero-block {
   padding: 10px;
   background-color: #ccc;
 }
-     
-  @media only screen and (min-width: 768px) {
-    .hero-block {
-      position:absolute;
-      top: 80%;
-      right: 16%;
-    }
-  }
 
+@media only screen and (min-width: 768px) {
+  .hero-block {
+    position:absolute;
+    top: 80%;
+    right: 16%;
+  }
+}
+
+
+/* icon tiles 
+.icon-tile {
+  padding: 40px;
+  text-align: center;
+}
+
+.icon-tile h2{
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .icon-tile {
+    padding: 60px 40px;
+  }
+}
+*/
 
 
 /* portfolio sections */
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "Area1 Area2 Area3"   
-      "Area4 Area5 Area6"  
-  }
-  .area1 { grid-area: Area1; }
-  .area2 { grid-area: Area2; }
-  .area3 { grid-area: Area3; }
-  .area4 { grid-area: Area4; }
-  .area5 { grid-area: Area5; }
-  .area6 { grid-area: Area6; }
-  /* responsive image */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "Area1 Area2 Area3"   
+    "Area4 Area5 Area6" 
+}
+.area1 { grid-area: Area1; }
+.area2 { grid-area: Area2; }
+.area3 { grid-area: Area3; }
+.area4 { grid-area: Area4; }
+.area5 { grid-area: Area5; }
+.area6 { grid-area: Area6; }
+
+  
+
+
+/* responsive image */
 .img-responsive {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .img--full {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-    /* to refactor */
+  max-width: 100%;
+  height: auto;
+}
+
+.img--full {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+  /* to refactor */
 .space-top-10 {
-    padding-top: 10px;
-  }
-  
-  .space-bottom-10{
-    padding-bottom: 10px;
-  }
-  
+  padding-top: 10px;
+}
+
+.space-bottom-10{
+  padding-bottom: 10px;
+}
+
 /* contact details */
 .contact-details{
-    padding: 40px;
-  }
-  
-  .contact-form {
-    padding: 40px;
-  }
-  
-  .contact-form input {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  
-  .contact-form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
+  padding: 40px;
+}
+
+.contact-form {
+  padding: 40px;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
 
 
 /*footer*/
 footer{
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 
 }
 

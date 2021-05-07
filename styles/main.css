@@ -14,7 +14,7 @@ html {
 
 /* header */
 header {
-  background-color: #f1f1f1;
+  background-color: #31a531;
   padding: 20px;
   text-align: center;
 }
@@ -133,23 +133,6 @@ body {
     }
   }
 
-
-/* icon tiles 
-.icon-tile {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .icon-tile h2{
-    padding-top: 20px;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .icon-tile {
-      padding: 60px 40px;
-    }
-  }
-*/
 
 
 /* portfolio sections */
